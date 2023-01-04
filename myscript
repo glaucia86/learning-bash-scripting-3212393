@@ -1,6 +1,29 @@
 #!/usr/bin/env bash
 
-echo "Olá"
+# working with variables
+myvar="Hello"
+echo "The value of the myvar variable is: $myvar"
+myvar="Bonjour!"
+echo "The value of the myvar variable is: $myvar"
 
-# Isso é um comentário
-echo "Mundo!"
+declare -r myname="Glaucia"
+echo "The value of the myname variable is: $myname"
+myname="Lemos"
+echo "The value of the myname variable is: $myname"
+
+declare -l lowerstring="This is some TEXT!"
+echo "The value of the lowerstring variable is: $lowerstring"
+lowerstring="Let's CHANGE the VALUE"
+echo "The value of the lowerstring variable is: $lowerstring"
+
+declare -l upperstring="This is some TEXT!"
+echo "The value of the upperstring variable is: $upperstring"
+lowerstring="Let's CHANGE the VALUE"
+echo "The value of the upperstring variable is: $upperstring"
+
+# working with numbers
+echo $(( (3+5) -5 * (5*2) ))
+a=3
+echo $a
+((a++))
+echo $a
