@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "Olá"
+
+# Isso é um comentário
+echo "Mundo!"
